@@ -3,7 +3,7 @@ pipeline{
 
     stages {
         stage('Build') {
-            sh 'echo "pushing the image ..."'
+            echo 'hhhh'
         }
     }
 }
