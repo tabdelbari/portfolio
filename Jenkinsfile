@@ -1,12 +1,16 @@
-pipeline{
-    agent { dockerfile true }
+pipeline {
+    agent {
+        dockerfile {
+            label 'docker-build'
+            dir 'build/Dockerfile'
+        }
+    }
 
     stages {
-        stage('Build'){
+        stage('Build') {
             steps {
                 echo 'Done.'
             }
         }
-        
     }
 }
