@@ -1,8 +1,8 @@
 pipeline {
     agent {
         dockerfile {
-            label 'docker-build'
-            dir 'build/Dockerfile'
+            filename 'Dockerfile'
+            dir 'build'
         }
     }
 
